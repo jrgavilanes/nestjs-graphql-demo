@@ -25,6 +25,16 @@
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
+## start db
+```bash
+docker compose up -d
+```
+
+## open [appolo](https://studio.apollographql.com/)
+```bash
+firefox http://localhost:3000/graphql
+```
+
 ## Project setup
 
 ```bash
@@ -56,6 +66,9 @@ $ pnpm run test:e2e
 # test coverage
 $ pnpm run test:cov
 ```
+
+
+
 
 ## Deployment
 

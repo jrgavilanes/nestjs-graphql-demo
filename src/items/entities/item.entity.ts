@@ -6,7 +6,7 @@ import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
 export class Item {
 
   @PrimaryGeneratedColumn('uuid')
-  @Field(() => ID)
+  @Field(() => ID)  
   id: string;
 
   @Column()
@@ -17,8 +17,8 @@ export class Item {
   @Field(() => Float)
   quantity: number;
 
-  @Column()
-  @Field(() => String)
-  quantityUnits: string;
+  @Column({ nullable: true })
+  @Field(() => String, { nullable: true })
+  quantityUnits?: string;
 
 }
